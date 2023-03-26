@@ -1,9 +1,9 @@
-import Home from './pages/productCatalog';
+import ProductCatalog from './pages/productCatalog';
 
 function App() {
   return (
    <>
-   <Home/>
+   <ProductCatalog/>
    
    </>
   );

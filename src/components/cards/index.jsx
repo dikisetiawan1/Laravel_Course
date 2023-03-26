@@ -7,8 +7,9 @@ const Cards = ()=>{
     return(
         <>
         <Card/>
-        
-        
+        <Card/>
+        <Card/>
+
         </>
 
     );
