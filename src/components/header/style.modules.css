@@ -1,0 +1,28 @@
+.background{
+    background-color:#152A46 ;
+    color: #fff;
+    width: 100%;
+    
+}
+.color{
+    color: #fff;
+    font-size: 14px;
+}
+
+.button-style{
+    margin-right:100px;
+    border-radius:50px;
+    background-color:#FF6161;
+    border:none;
+    font-size: 12px;
+    
+}
+.button-style:hover{
+background-color: #d87676;
+}
+
+.right-header{
+    position: relative;
+    margin-right: -100px;
+}
+
