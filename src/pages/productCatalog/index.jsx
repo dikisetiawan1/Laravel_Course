@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Header from '../../components/header';
 import Cards from '../../components/cards';
+import Footer from '../../components/footer';
 
 import './style.modules.css';
 
@@ -25,7 +26,7 @@ const ProductCatalog = () => {
             </Row>
             <Row>
                 <Col>
-            
+            <Footer/>
                 </Col>
           
             </Row>
