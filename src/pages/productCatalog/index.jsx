@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Header from '../../components/header';
+import Header from '../../components/hero';
 import Cards from '../../components/cards';
 import Footer from '../../components/footer';
 
