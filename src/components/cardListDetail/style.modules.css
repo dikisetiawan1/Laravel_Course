@@ -12,3 +12,67 @@
     margin-left: 30px;
     font-size: 18px;
 }
+
+.checkbox-main{
+    position: relative;
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    width: 0px;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+input[type=checkbox]{
+    visibility: hidden;
+}
+.checkbox-main input:checked ~ .check-box{
+
+    background-color: orange;
+    
+    }
+
+
+    .check-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: black;
+        border-radius: 4px;
+      }
+
+      .checkbox-main:hover input ~ .check-box {
+        background-color: gray;
+      }
+
+      .checkbox-main input:active ~ .check-box {
+        background-color: white;
+      }
+     
+      .check-box:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .checkbox-main input:checked ~ .check-box:after {
+        display: block;
+      }
+   
+      .checkbox-main .check-box:after {
+        left: 7px;
+        bottom: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        /* membuat checklis berwarna putih */
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      
