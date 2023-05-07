@@ -3,6 +3,7 @@ import { Col, Container,Row } from "react-bootstrap";
 import Header from "../../components/heroDetail";
 import Footer from "../../components/footer";
 import Card from "../../components/cardListDetail";
+import Banner from "../../components/banner";
 
 const ProductDetail = () => {
 
@@ -23,10 +24,16 @@ return(
     
     </Col>
  </Row>
+ <Row>
+   <Col>
+   <Banner/>
+   
+   </Col>
+ </Row>
 
  <Row>
     
-<Col>
+<Col style={{marginTop:'-400px'}}>
 
 <Footer/>
 

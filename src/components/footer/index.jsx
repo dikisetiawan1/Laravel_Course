@@ -22,10 +22,10 @@ const Footer = () => {
 
     return(
 <>
-<div style={{backgroundColor:'#EFF4FA',height:'290px'}}>
+<div style={{backgroundColor:'#EFF4FA',height:'450px'}}>
 
 <Container style={{marginTop:'400px', }}>
-    <Row style={{color:'#A3A3A3', paddingTop:'50px'}}>
+    <Row style={{color:'#A3A3A3', paddingTop:'200px'}}>
         <Col style={{marginRight:'90px'}} >
         <p>TAGLINE edspert disini</p>
         <p>Jl. Watugede No.58, Wonorejo, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581</p>

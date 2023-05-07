@@ -30,10 +30,32 @@ const DataMateri = [
         sub : 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.'
     },
     
+];
+
+
+
+const fasList = [
+
+    {
+        id: '1',
+        name:'E-Sertifikat'
+    },
+    {
+        id: '2',
+        name:'E-Portfolio'
+    },
+    {
+        id: '3',
+        name:'Job Connector'
+    },
+    {
+        id: '4',
+        name:'Career Development'
+    }
 ]
 
 
 
 
 
-export default DataMateri;
+export {DataMateri,fasList};

@@ -2,8 +2,8 @@
 import { Container,Row,Col, Card } from "react-bootstrap";
 import '../cardListDetail/style.modules.css';
 import '../../helper/data';
-import DataMateri from "../../helper/data";
-
+import {DataMateri, fasList} from "../../helper/data";
+import checklis from '../../assets/check.svg'
 
 const cardListDetail = () => {
 
@@ -42,11 +42,8 @@ return(
         </Card>
         
         </Col>
-
-
         <Col>
         <Card className="mt-5 shadow" style={{width:'900px', height:'650px', borderRadius:'20px'}}>
-
             <Card.Body>
                 <h3 style={{marginBottom:'25px', margin:'30px', marginLeft:'40px', fontWeight:'600'}}>Materi</h3>
                 <Card.Title>
@@ -55,33 +52,46 @@ return(
                 </Card.Title>
             </Card.Body>
         </Card>
-        
-        
-        
         </Col>
     </Row>
+
+    <Row>
+      <Col>
+      <Card className="mt-5 shadow" style={{width:'900px', height:'300px', borderRadius:'20px', right:'-400px'}}>
+        <Card.Body>
+      <Card.Title>
+        <h3 style={{marginBottom:'25px', margin:'30px', marginLeft:'40px', fontWeight:'600'}}> Fasilitas</h3>
+      <FasList arraydata={fasList}/>
+      </Card.Title>
+      </Card.Body>
+
+      </Card>
+      
+      </Col>
+    </Row>
+
+    
 </Container>
 </>
 );
-
-
-
-
 }
+
+
 var CardList = function (props) {  
     //ALl data Array  
     var listDataTitle = props.arrydata.map(function (data) {  
       return (
        <>
         
-      <div className="card-label mt-3" key={data.id}> 
-        <label className="checkbox-main">
-        <input  type="checkbox" for="checkbox" name="checkbox" id="checkbox"/>
+      <div className="card-label img-check" key={data.id}> 
+      <img src={checklis} alt="" />
+        <label className="checkbox-main" style={{marginTop:'50px'}}>
         <span className="check-box"></span>
+  
         </label>
 
-        <span style={{fontSize:'20px', fontWeight:'600', paddingLeft:'10px',position:'absolute', marginTop:'-25px'}}>{data.title} </span><br/> 
-        <span style={{fontSize:'14px',fontWeight:'400',color:'#868686',position:'absolute', marginTop:'-20px', marginRight:'60px', lineHeight:'1.5', paddingLeft:'10px'}}>{data.sub}</span></div>  
+        <span style={{fontSize:'20px', fontWeight:'600', paddingLeft:'10px',position:'absolute'}}>{data.title} </span><br/> 
+        <span style={{fontSize:'14px',fontWeight:'400',color:'#868686',position:'absolute', marginRight:'60px', lineHeight:'1.5', paddingLeft:'10px', marginTop:'5px'}}>{data.sub}</span></div>  
         
       </>
       )});  
@@ -95,6 +105,35 @@ var CardList = function (props) {
     );  
   }  
 
+
+  var FasList = function(props){
+    var listDataFas = props.arraydata.map(function(data){
+      return(
+        <>
+         <div className="card-label img-check" key={data.id}> 
+         <img src={checklis} alt="" />
+          <label className="checkbox-main">
+      
+          <span className="check-box"></span>
+          </label>
+          <span style={{fontSize:'20px', fontWeight:'600', paddingLeft:'10px',position:'absolute', marginTop:'-5px'}}>
+            {data.name} 
+            </span><br/> 
+          </div>
+        
+        </>
+      )
+    });
+  
+    return(
+      <>
+      <div style={{marginLeft:'60px', marginTop:'30px'}} >
+        {listDataFas}
+      </div>
+    
+      </>
+    );
+  }
 
  
 
