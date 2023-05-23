@@ -1,15 +1,17 @@
 
 import { Col, Container, Row,Card } from 'react-bootstrap';
 import Img from '../../assets/card-img.png';
+import { Link } from 'react-router-dom';
 
 const Cardss = () =>{
 
 
     return(
      <>
-            <Container className='mt-5'>
+            <Container className='mt-5' >
                 <Row>
                 <Col> 
+                <Link to="/detail" style={{textDecoration:'none',color:'black'}}>
                 <Card style={{width:'22rem'}}>
                     <div style={{backgroundColor:'#152A46', height:'10rem', borderRadius:'8px 8px 0px 0px', position:'relative'}}>
 
@@ -41,10 +43,13 @@ const Cardss = () =>{
                      <p style={{fontSize:'15px', textAlignLast:'right', color:'#00000080'}}><del>Rp 2060.000 </del><span style={{fontSize:'20px', marginLeft:'10px', color:'#0ACF83', fontWeight:'800'}}>Rp 560.000</span></p>
             </Card.Body>
             </Card>
+            </Link>
+            
             </Col>
 
 
-            <Col style={{marginLeft:'-10px'}}> 
+            <Col style={{marginLeft:'-10px'}}>
+                <Link to="/detail" style={{textDecoration:'none',color:'black'}}> 
                 <Card style={{width:'22rem'}}>
                     <div style={{backgroundColor:'#152A46', height:'10rem', borderRadius:'8px 8px 0px 0px', position:'relative'}}>
 
@@ -76,10 +81,12 @@ const Cardss = () =>{
                      <p style={{fontSize:'15px', textAlignLast:'right', color:'#00000080'}}><del>Rp 2060.000 </del><span style={{fontSize:'20px', marginLeft:'10px', color:'#0ACF83', fontWeight:'800'}}>Rp 560.000</span></p>
             </Card.Body>
             </Card>
+            </Link>
             </Col>
 
             
             <Col style={{marginLeft:'-10px'}}> 
+            <Link to="/detail" style={{textDecoration:'none',color:'black'}}> 
                 <Card style={{width:'22rem'}}>
                     <div style={{backgroundColor:'#152A46', height:'10rem', borderRadius:'8px 8px 0px 0px', position:'relative'}}>
 
@@ -111,6 +118,7 @@ const Cardss = () =>{
                         <p style={{fontSize:'15px', textAlignLast:'right', color:'#00000080'}}><del>Rp 2060.000 </del><span style={{fontSize:'20px', marginLeft:'10px', color:'#0ACF83', fontWeight:'800'}}>Rp 560.000</span></p>
             </Card.Body>
             </Card>
+            </Link>
             </Col>
             </Row>
             </Container>

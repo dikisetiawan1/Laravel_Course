@@ -1,5 +1,6 @@
 
 import { Container,Row,Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import '../cardListDetail/style.modules.css';
 import '../../helper/data';
 import {DataMateri, fasList} from "../../helper/data";
@@ -12,7 +13,7 @@ return(
     <>
 
 
-<Container>
+<Container fluid style={{backgroundColor:'#F5F5F5',zIndex:'-3'}}>
     <Row>
         <Col>
 
@@ -34,7 +35,8 @@ return(
                     <Col>
                     <p style={{fontSize:'20px',color:'#FF6A28'}}>Rp. 99.000</p>
                     </Col>
-                  <a href="#" className="btn btn-warning text-white mt-4 " style={{borderRadius:'20px' , width:'80%', marginLeft:'30px'}}>Daftar Kelas</a>
+                           <Link to="/payment" className="btn btn-warning text-white mt-4" style={{borderRadius:'20px' , width:'80%', marginLeft:'30px'}}>Daftar kelas</Link>
+
                 </Row>
             </Card.Title>
             
