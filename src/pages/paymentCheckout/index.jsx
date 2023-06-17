@@ -3,7 +3,7 @@ import { Card,Col,Row,Container } from "react-bootstrap";
 
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Paymentbank from "../../components/paymentbank";
+import Paymentcheckout from "../../components/paymentcheckout";
 
 
 
@@ -30,7 +30,7 @@ const ProductCheckout=()=>{
                 </h3>
                 <Col>
 
-                <Paymentbank/>
+                <Paymentcheckout/>
 
            
             
