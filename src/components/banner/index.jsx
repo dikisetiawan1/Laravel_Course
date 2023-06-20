@@ -11,7 +11,7 @@ return(
 <>
 
     
-<Card style={{backgroundColor:'#2B3E58', height:'386px', marginTop:'100px'}}>
+<Card style={{backgroundColor:'#2B3E58', height:'388px', marginTop:'100px'}}>
 <Container >
     <Row>
         <Col>
