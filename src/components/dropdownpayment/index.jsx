@@ -17,8 +17,11 @@ const Dropdownpayment=()=>{
   <p style={{fontSize:'12px',color:'#6D7175',weight:'400'}}>Pembayaran melalui Bank Transfer Mandiri atau BCA. Metode bayar ini memerlukan verifikasi pembayaran manual melalui Whatsapp</p>
   
   </Col>
-    <Col style={{marginTop:'70px'}}>
-    <Dropdown>
+    <Col style={{marginTop:'40px'}}>
+
+    <Cardbank paymentoption="Bank Transfer ke Rek Bank Mandiri" banklogos={MandiriLogos}/>
+    <Cardbank paymentoption="Bank Transfer ke Rek Bank BCA" banklogos={BcaLogos}/>
+    {/* <Dropdown>
     <Dropdown.Toggle  id="dropdown-custom-components" variant="light" style={{float:'right'}}>
     
 
@@ -37,55 +40,54 @@ const Dropdownpayment=()=>{
       </Dropdown.Item>
     </DropdownMenu>
    
-  </Dropdown>
+  </Dropdown> */}
     
     
     </Col>
     
 </Row>
+    <Row style={{marginTop:'0px'}}>
+    <Col xs="10">
+    <p style={{fontSize:'14px',marginTop:'40px  '}}>Virtual Account (verifikasi otomatis)</p>
+      <p style={{fontSize:'12px',color:'#6D7175',weight:'100', marginTop:'20px  '}}>Pembayaran melalui virtual account berbagai bank. Metode bayar ini akan diverifikasi secara otomatis.  </p>
+      
 
-
-
-<Row style={{marginTop:'50px'}}>
-<Col xs="10">
-<p style={{fontSize:'14px',marginTop:'150px  '}}>Virtual Account (verifikasi otomatis)</p>
-  <p style={{fontSize:'12px',color:'#6D7175',weight:'100', marginTop:'20px  '}}>Pembayaran melalui virtual account berbagai bank. Metode bayar ini akan diverifikasi secara otomatis.  </p>
-  
-
-</Col>
-  <Col style={{marginTop:'200px'}} xs="2">
-
-  <Dropdown >
-    <Dropdown.Toggle  id="dropdown-custom-components" variant="light" style={{float:'right'}}>
-    
-
-    </Dropdown.Toggle>
-
-    <Dropdown.Menu style={{width:"450px", marginLeft:'-430px',marginTop:'10px'}} >
-      <Dropdown.Item >
-  <Cardbank paymentoption="Virtual Account Mandiri" banklogos={MandiriLogos}/>
-      </Dropdown.Item>
-    </Dropdown.Menu>
-
-
-    <DropdownMenu style={{width:"450px", marginLeft:'-430px',marginTop:'80px'}}>
-      <Dropdown.Item>
+    </Col>
+      <Col style={{marginTop:'40px'}}>
+      <Cardbank paymentoption="Virtual Account Mandiri" banklogos={MandiriLogos}/>
       <Cardbank paymentoption="Virtual Account BCA" banklogos={BcaLogos}/>
-      </Dropdown.Item>
-    </DropdownMenu>
-   
-  </Dropdown>
-  </Col>
-</Row>
-  </Container>
-        </>
-    )
-}
+
+      {/* <Dropdown >
+        <Dropdown.Toggle  id="dropdown-custom-components" variant="light" style={{float:'right'}}>
+        
+
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu style={{width:"450px", marginLeft:'-430px',marginTop:'10px'}} >
+          <Dropdown.Item >
+      <Cardbank paymentoption="Virtual Account Mandiri" banklogos={MandiriLogos}/>
+          </Dropdown.Item>
+        </Dropdown.Menu>
 
 
-function Cardbank(props){
+        <DropdownMenu style={{width:"450px", marginLeft:'-430px',marginTop:'80px'}}>
+          <Dropdown.Item>
+          <Cardbank paymentoption="Virtual Account BCA" banklogos={BcaLogos}/>
+          </Dropdown.Item>
+        </DropdownMenu>
+      
+      </Dropdown> */}
+      </Col>
+    </Row>
+      </Container>
+            </>
+        )
+    }
 
-  return(
+
+    function Cardbank(props){
+
+      return(
 <>
     <Container>
     <Row>

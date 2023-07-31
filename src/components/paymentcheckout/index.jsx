@@ -11,7 +11,7 @@ return(
 <Row>
     <Col>
     
-    <Card style={{width:'40%',marginLeft:'100px',marginTop:'35px', height:"800px"}}>
+    <Card style={{width:'40%',marginLeft:'100px',marginTop:'35px', height:"650px"}}>
         <Card.Body>
         <Card.Title>
             
